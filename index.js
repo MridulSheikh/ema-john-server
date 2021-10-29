@@ -45,7 +45,6 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
            const query = {key : {$in: keys}};
            const user = await productCollection.find(query).toArray();
             res.json(user);
-            res.send('hitting the post')
         })
     }
     finally{
