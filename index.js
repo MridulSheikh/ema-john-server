@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 //mongo db link
-const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@mydatabase.jdlyw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://ema-john:l4JbAM91PA6z4DQE@mydatabase.jdlyw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 console.log(uri)
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
  
